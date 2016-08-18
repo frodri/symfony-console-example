@@ -1,0 +1,5 @@
+vendor/
+subscribers.txt
+unsubscribed.txt
+bounced.txt
+composer.lock

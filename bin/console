@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__.'/../vendor/autoload.php';
+
+use SymfonyExample\Commands\LinkScannerCommand;
+use SymfonyExample\Commands\SubscriberCommand;
+use Symfony\Component\Console\Application;
+
+$application = new Application('Symfony Command Line', '0.1');
+$application->add(new SubscriberCommand());
+$application->add(new LinkScannerCommand());
+$application->run();
