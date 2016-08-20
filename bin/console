@@ -5,9 +5,13 @@ require __DIR__.'/../vendor/autoload.php';
 
 use SymfonyExample\Commands\LinkScannerCommand;
 use SymfonyExample\Commands\SubscriberCommand;
+use SymfonyExample\Commands\PodcastRssParserCommand;
+use SymfonyExample\Commands\CommaDelimeterConversionCommand;
 use Symfony\Component\Console\Application;
 
 $application = new Application('Symfony Command Line', '0.1');
 $application->add(new SubscriberCommand());
 $application->add(new LinkScannerCommand());
+$application->add(new PodcastRssParserCommand());
+$application->add(new CommaDelimeterConversionCommand());
 $application->run();

@@ -2,4 +2,5 @@ vendor/
 subscribers.txt
 unsubscribed.txt
 bounced.txt
+tab-delimited.txt
 composer.lock
